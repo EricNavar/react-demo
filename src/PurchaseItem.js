@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import CanadaDryImage from './assets/canada-dry.jpeg';
+import Carrot from './assets/carrot.webp';
 
 const Button = styled.button`
   background: transparent;
@@ -40,7 +40,7 @@ function PurchaseItem(props) {
       borderWidth: 2,
       borderColor: 'darkblue'
     }}>
-      <ItemThumbnail src={CanadaDryImage} alt="canada-dry"/>
+      <ItemThumbnail src={Carrot} alt="carrot"/>
       <ItemName>{props.name}</ItemName>
       <PriceText>${props.price}</PriceText>
       <Button>

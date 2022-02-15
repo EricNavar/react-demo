@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import CanadaDryImage from './assets/canada-dry.jpeg';
+import Carrot from './assets/carrot.webp';
 
 const DetailsText = styled.p`
   color: darkblue;
@@ -15,6 +15,10 @@ const Button = styled.button`
   color: palevioletred;
   margin: 0 1em;
   padding: 0.25em 1em;
+`
+
+const BuyNowButton = styled.button`
+  background: #e3af34;
 `
 
 const ItemName = styled.p`
@@ -33,22 +37,35 @@ const ItemThumbnail = styled.img`
   width: 150px;
 `
 
+const ItemContainer = styled.div`
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  border-color: black;
+  width: 300px;
+  text-align: center;
+`
+
 function PurchasePage() {
   return (
     <div>
+      <Button>
+        Sign in
+      </Button>
       <h1>
         Seltzer Water Pricing
       </h1>
       <DetailsText>
         Get your tasty seltzer water today :)
       </DetailsText>
-    
-      <ItemThumbnail src={CanadaDryImage} alt="canada-dry"/>
-      <ItemName>Canada Dry Seltzer Water</ItemName>
-      <PriceText>$9.00</PriceText>
-      <Button>
-        BUY NOW
-      </Button>
+      <ItemContainer>
+        <ItemThumbnail src={Carrot} alt="canada-dry"/>
+        <ItemName>Canada Dry Seltzer Water</ItemName>
+        <PriceText>$9.00</PriceText>
+        <BuyNowButton>
+          BUY NOW
+        </BuyNowButton>
+      </ItemContainer>
     </div>
   )
 }
