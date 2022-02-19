@@ -2,12 +2,6 @@ import React from 'react';
 import styled from 'styled-components'
 import Carrot from './assets/carrot.webp';
 
-const DetailsText = styled.p`
-  color: darkblue;
-  size: 28px;
-  margin: 20px;
-`
-
 const Button = styled.button`
   background: transparent;
   border-radius: 3px;
@@ -19,6 +13,12 @@ const Button = styled.button`
 
 const BuyNowButton = styled.button`
   background: #e3af34;
+`
+
+const DetailsText = styled.p`
+  color: darkblue;
+  size: 28px;
+  margin: 20px;
 `
 
 const ItemName = styled.p`
@@ -44,6 +44,9 @@ const ItemContainer = styled.div`
   border-color: black;
   width: 300px;
   text-align: center;
+  margin: 16px;
+  padding: 16px;
+  line-height: .5;
 `
 
 function PurchasePage() {
@@ -58,16 +61,38 @@ function PurchasePage() {
       <DetailsText>
         Get your tasty seltzer water today :)
       </DetailsText>
-      <ItemContainer>
+      <div style={{
+          borderStyle: 'solid',
+          borderWidth: 1,
+          borderRadius: 8,
+          borderColor: 'black',
+          width: 300,
+          textAlign: 'center',
+          margin: 16,
+          padding: 16,
+          lineHeight: .5,
+      }}>
         <ItemThumbnail src={Carrot} alt="canada-dry"/>
         <ItemName>Canada Dry Seltzer Water</ItemName>
         <PriceText>$9.00</PriceText>
         <BuyNowButton>
           BUY NOW
         </BuyNowButton>
-      </ItemContainer>
+      </div>
     </div>
   )
 }
 
 export { PurchasePage };
+
+/*
+          border-style: solid;
+          border-width: 1px;
+          border-radius: 8px;
+          border-color: black;
+          width: 300px;
+          text-align: center;
+          margin: 16px;
+          padding: 16px;
+          line-height: .5;
+*/

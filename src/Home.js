@@ -17,22 +17,23 @@ function Home() {
       <p>
         Welcome to the SSD Minecraft Fan Page!
       </p>
-      <div className="margin">
-        <div className='card'>
-          <p>
-            <b>Top 5 fun facts about Minecraft:</b>
-          </p>
-          <ul>
-            <li className="listItem">It is cool</li>
-            <li className="listItem">There are over 7 types of blocks</li>
-            <li className="listItem">Do not ever mine straight upwards 😫</li>
-            <li className="listItem">You can row extra fast with the run button</li>
-          </ul>
-        </div>
+      <div className='card'>
         <p>
-          © 2022 Your Mom
+          <b>Top 5 fun facts about Minecraft:</b>
         </p>
+        <ul>
+          <li className="listItem">It is cool</li>
+          <li className="listItem">There are over 7 types of blocks</li>
+          <li className="listItem">Do not ever mine straight upwards 😫</li>
+          <li className="listItem">You can row extra fast with the run button</li>
+        </ul>
       </div>
+      <p className="copyright">
+        © 2022 Your Mom
+      </p>
+      <button style={{margin: 90}}>
+        basic HTML button
+      </button>
     </div>
   );
 }

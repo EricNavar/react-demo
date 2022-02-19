@@ -11,12 +11,6 @@ const Button = styled.button`
   padding: 0.25em 1em;
 `
 
-const DetailsText = styled.p`
-  color: darkblue;
-  size: 28px;
-  margin: 20px;
-`
-
 const ItemName = styled.p`
   color: darkblue;
   size: 28px;
