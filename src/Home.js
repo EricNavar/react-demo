@@ -31,9 +31,6 @@ function Home() {
       <p className="copyright">
         © 2022 Your Mom
       </p>
-      <button style={{margin: 90}}>
-        basic HTML button
-      </button>
     </div>
   );
 }

@@ -61,6 +61,7 @@ function PurchasePage() {
       <DetailsText>
         Get your tasty seltzer water today :)
       </DetailsText>
+
       <div style={{
           borderStyle: 'solid',
           borderWidth: 1,
@@ -79,6 +80,7 @@ function PurchasePage() {
           BUY NOW
         </BuyNowButton>
       </div>
+
     </div>
   )
 }
