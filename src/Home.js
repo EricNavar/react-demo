@@ -17,6 +17,7 @@ function Home() {
       <p>
         Welcome to the SSD Minecraft Fan Page!
       </p>
+      
       <div className='card'>
         <p>
           <b>Top 5 fun facts about Minecraft:</b>
@@ -28,6 +29,7 @@ function Home() {
           <li className="listItem">You can row extra fast with the run button</li>
         </ul>
       </div>
+
       <p className="copyright">
         © 2022 Your Mom
       </p>
