@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Routes,
   Route,
@@ -5,7 +6,6 @@ import {
 } from "react-router-dom";
 import { PurchasePage } from './PurchasePage.js';
 import { Home } from './Home.js';
-import { AppBar } from '@mui/material';
 
 function App() {
   return (
