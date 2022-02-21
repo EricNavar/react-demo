@@ -44,4 +44,4 @@ function StoreItem(props) {
   );
 }
 
-export { PurchaseItem }
+export { StoreItem }
