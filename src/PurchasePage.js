@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 import Carrot from './assets/carrot.webp';
+import House from './assets/house.jpg';
+import Sword from './assets/sword.gif';
 
 const Button = styled.button`
   background: transparent;
@@ -13,12 +15,6 @@ const Button = styled.button`
 
 const BuyNowButton = styled.button`
   background: #e3af34;
-`
-
-const DetailsText = styled.p`
-  color: darkblue;
-  size: 28px;
-  margin: 20px;
 `
 
 const ItemName = styled.p`
@@ -37,18 +33,6 @@ const ItemThumbnail = styled.img`
   width: 150px;
 `
 
-const ItemContainer = styled.div`
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 8px;
-  border-color: black;
-  width: 300px;
-  text-align: center;
-  margin: 16px;
-  padding: 16px;
-  line-height: .5;
-`
-
 function PurchasePage() {
   return (
     <div>
@@ -56,11 +40,8 @@ function PurchasePage() {
         Sign in
       </Button>
       <h1>
-        Seltzer Water Pricing
+        SSD Minecraft Server Marketplace
       </h1>
-      <DetailsText>
-        Get your tasty seltzer water today :)
-      </DetailsText>
 
       <div style={{
           borderStyle: 'solid',
@@ -74,7 +55,7 @@ function PurchasePage() {
           lineHeight: .5,
       }}>
         <ItemThumbnail src={Carrot} alt="canada-dry"/>
-        <ItemName>Canada Dry Seltzer Water</ItemName>
+        <ItemName>Carrot</ItemName>
         <PriceText>$9.00</PriceText>
         <BuyNowButton>
           BUY NOW

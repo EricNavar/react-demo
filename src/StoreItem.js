@@ -27,7 +27,7 @@ const ItemThumbnail = styled.img`
   width: 150px;
 `
 
-function PurchaseItem(props) {
+function StoreItem(props) {
   return (
     <div style={{
       borderStyle: 'solid',
