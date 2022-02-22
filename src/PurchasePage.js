@@ -13,7 +13,7 @@ const Button = styled.button`
   padding: 0.25em 1em;
 `
 
-const BuyNowButton = styled.button`
+const BuyNowButton = styled(Button)`
   background: #e3af34;
 `
 
