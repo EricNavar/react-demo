@@ -10,7 +10,7 @@ GitHub Repository: [https://github.com/EricNavar/react-demo](https://github.com/
 -   The code from when the meeting started is on the starter-code branch
     
 
-Recording on YouTube: [Link](http://google.com)
+Recording: [Link](https://youtu.be/XXNCdJX5fnU)
 
 Code Sandbox with the starter code: [bit.ly/ssd-frontend](http://bit.ly/ssd-frontend)
 
