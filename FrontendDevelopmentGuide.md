@@ -5,7 +5,7 @@ Slide deck: [Link](https://docs.google.com/presentation/d/1TEOyeBTv_YNYvWB07-6qq
 
 GitHub Repository: [https://github.com/EricNavar/react-demo](https://github.com/EricNavar/react-demo)
 
--   Updated code will everything made during meeting is on master branch
+-   Updated code with everything made during meeting is on master branch
     
 -   The code from when the meeting started is on the starter-code branch
     
@@ -144,51 +144,74 @@ You have to have node.js installed to install node packages. npm stands for node
 
 ### dotenv
 
--   Manage environment variables
+-   Manage environment variables. See below for more details on what environment variables are.
     
 -   Install with npm install dotenv --save
     
 
-  
+# Deployment
+## GitHub Pages
+- Host basic HTML/CSS/vanilla JavaScript websites
+- Free
+- Go to the settings tab of your repository, then click on the "Pages" tab, then choose which branch you want to deploy
+- can't deploy React apps
+
+## Heroku
+- Popular way for beginners to deploy React apps
+- Easiest way to host a React app. Choose which branch you want to deploy, specify what command is needed to run is, (most likely npm start) and it will deploy
+- Server goes to sleep after 30 minutes of inactivity, may take 20-40 seconds for a React app to start again if it's big
+
+## AWS Amplify
+- Like Heroku but much more powerful
+- Has integration with many other AWS services.
+	- ex: easily buy a domain and get an SSL certificate and hook it up with your website
+	- use API Gateway to make API calls, connect to databases
+- Your website will automatically rebuild and redeploy when your branch is updated on GitHub
+- Server does not go to sleep like Heroku does
+- Pay based on usage, but very, very cheap (a penny per month for a resume site)
+
+## NGrok
+-   Create temporary deployments. Good for demos like in hackathons
+
+## Others
+- Google Cloud probably has its own thing and students get like $300 of free credit
 
 # Other things to research on your own and I didn’t get to cover
 
-Environment variables
+**Environment variables**
 
--   You don’t want your frontend to include credentials, API keys, database keys, etc because of how the frontend is shipped to users. Look into environment variables to see how to avoid doing this
-    
+-   Frontend code is all code that is sent to a browser, so you don’t want your frontend to include credentials, API keys, database keys, etc. You would keep these keys as "environment variables" in a file, which would not be pushed to git history (specify the file in .gitignore).
+- Look more into environment variables to see how to keep your keys safe. dot-env is a good library to help with this.
+- https://trekinbami.medium.com/using-environment-variables-in-react-6b0a99d83cf5
 -   Importance: necessary for real websites
     
 
-TypeScript
+**TypeScript**
 
--   this is a language that compiles to JavaScript. It’s mostly the same syntax, but it enforces types and validates parameters and has enums.
+-   this is a language that compiles to JavaScript. It’s mostly the same syntax, but it enforces types and stricter coding rules and validates parameters and has enums.
     
 -   Importance: high
     
 
-Lazy loading
+**Lazy loading**
 
 -   Affects order that things load. If there’s something like an image or something at the bottom of the screen that will take a long time, let it load after everything else loads so it doesn’t hold everything else back.
     
 -   Importance: high
     
 
-Flask
+**Flask**
 
 -   make websites with Python🐍
     
+**CSS Preprocessors**
 
-NGrok
-
--   Create temporary deployments. Good for demos like in hackathons
-    
-
-CSS Preprocessors
-
--   Ex: SASS
+-   Ex: SASS, LESS
     
 -   A language that compiles to CSS and can be a bit easier
     
 
-Bootstrap
+**Bootstrap**
+- Bootstrap_is the most popular CSS Framework for developing responsive and mobile-first website
+- Get a license through the GitHub student pack
+- Be careful because it can introduce a bit a bloat
