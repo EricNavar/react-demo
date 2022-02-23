@@ -1,7 +1,11 @@
 import React from 'react';
 import "./Home.css";
+import Carrot from './assets/carrot.webp';
 
 function Home() {
+  const message = "#ILOVEMINECRAFT"
+
+
   return (
     <div>
       <div className="landingScreenImage">
@@ -10,14 +14,15 @@ function Home() {
               Minecraft Fan Club
             </h1>
             <h2 className="bannerBottom bannerText">
-              #ILOVEMINECRAFT
+              {message}
             </h2>
         </div>
       </div>
       <p>
         Welcome to the SSD Minecraft Fan Page!
       </p>
-      
+      <img src={Carrot} />
+
       <div className='card'>
         <p>
           <b>Top 5 fun facts about Minecraft:</b>

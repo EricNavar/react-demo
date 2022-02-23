@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import Carrot from './assets/carrot.webp';
 import House from './assets/house.jpg';
 import Sword from './assets/sword.gif';
+import { StoreItem } from './StoreItem';
+import {items} from './pricingData';
+
 
 const Button = styled.button`
   background: transparent;
@@ -43,28 +46,20 @@ function PurchasePage() {
         SSD Minecraft Server Marketplace
       </h1>
 
-      <div style={{
-          borderStyle: 'solid',
-          borderWidth: 1,
-          borderRadius: 8,
-          borderColor: 'black',
-          width: 300,
-          textAlign: 'center',
-          margin: 16,
-          padding: 16,
-          lineHeight: .5,
-      }}>
-        <ItemThumbnail src={Carrot} alt="canada-dry"/>
-        <ItemName>Carrot</ItemName>
-        <PriceText>$9.00</PriceText>
-        <BuyNowButton>
-          BUY NOW
-        </BuyNowButton>
-      </div>
+      {items.map((item) => {
+        //return <StoreItem name={item.name} thumbnail={item.thumbnail} price={item.price}/>
+        return <StoreItem {...item}/>
+      })}
 
     </div>
   )
 }
+
+// {
+//   name: "carrot",
+//   price: "5 emeralds",
+//   thumbnail: Carrot
+// },
 
 export { PurchasePage };
 

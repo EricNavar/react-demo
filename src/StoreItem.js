@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 import Carrot from './assets/carrot.webp';
+import House from './assets/house.jpg';
+import Sword from './assets/sword.gif';
 
 const Button = styled.button`
   background: transparent;
@@ -9,6 +11,10 @@ const Button = styled.button`
   color: palevioletred;
   margin: 0 1em;
   padding: 0.25em 1em;
+`
+
+const BuyNowButton = styled(Button)`
+  background: #e3af34;
 `
 
 const ItemName = styled.p`
@@ -31,17 +37,24 @@ function StoreItem(props) {
   return (
     <div style={{
       borderStyle: 'solid',
-      borderWidth: 2,
-      borderColor: 'darkblue'
-    }}>
-      <ItemThumbnail src={Carrot} alt="carrot"/>
-      <ItemName>{props.name}</ItemName>
-      <PriceText>${props.price}</PriceText>
-      <Button>
-        BUY NOW
-      </Button>
-    </div>
-  );
+      borderWidth: 1,
+      borderRadius: 8,
+      borderColor: 'black',
+      width: 300,
+      textAlign: 'center',
+      margin: 16,
+      padding: 16,
+      lineHeight: .5,
+  }}>
+    <ItemThumbnail src={props.thumbnail} />
+    <ItemName>{props.name}</ItemName>
+    <PriceText>{props.price}</PriceText>
+    <BuyNowButton>
+      BUY NOW
+    </BuyNowButton>
+    <p>Seller: {props.seller ? props.seller : "Unknown"}</p>
+  </div>
+  )
 }
 
-export { StoreItem }
+export { StoreItem };
