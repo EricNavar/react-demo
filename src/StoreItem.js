@@ -1,8 +1,5 @@
 import React from 'react';
 import styled from 'styled-components'
-import Carrot from './assets/carrot.webp';
-import House from './assets/house.jpg';
-import Sword from './assets/sword.gif';
 
 const Button = styled.button`
   background: transparent;
@@ -33,27 +30,33 @@ const ItemThumbnail = styled.img`
   width: 150px;
 `
 
+const SoldText = styled.span`
+  color: red;
+  font-weight: bold;
+`
+
+const Container = styled.div`
+  border-style: solid;
+  border-wdth: 1px;
+  border-radius: 8px;
+  border-color: black;
+  min-width: 300px;
+  text-align: center;
+  margin: 16px;
+  padding: 16px;
+  line-height: .5;
+`
+
 function StoreItem(props) {
   return (
-    <div style={{
-      borderStyle: 'solid',
-      borderWidth: 1,
-      borderRadius: 8,
-      borderColor: 'black',
-      width: 300,
-      textAlign: 'center',
-      margin: 16,
-      padding: 16,
-      lineHeight: .5,
-  }}>
-    <ItemThumbnail src={props.thumbnail} />
-    <ItemName>{props.name}</ItemName>
-    <PriceText>{props.price}</PriceText>
-    <BuyNowButton>
-      BUY NOW
-    </BuyNowButton>
-    <p>Seller: {props.seller ? props.seller : "Unknown"}</p>
-  </div>
+    <Container>
+      <ItemThumbnail src={props.thumbnail} />
+      <ItemName>{props.name}{props.sold && <SoldText> SOLD</SoldText>}</ItemName>
+      <PriceText>{props.price}</PriceText>
+      <BuyNowButton>
+        BUY NOW
+      </BuyNowButton>
+    </Container>
   )
 }
 

@@ -6,16 +6,19 @@ export const items = [
   {
     name: "carrot",
     price: "5 emeralds",
-    thumbnail: Carrot
+    thumbnail: Carrot,
+    sold: false
   },
   {
     name: "House",
     price: "100 emeralds",
-    thumbnail: House
+    thumbnail: House,
+    sold: false
   },
   {
-    name: "Gold Sword",
-    price: "5 gold blocks",
-    thumbnail: Sword
+    name: "Diamond Sword",
+    price: "5 diamond blocks",
+    thumbnail: Sword,
+    sold: true
   }, 
 ];
