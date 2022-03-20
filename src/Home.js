@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Home.css";
-import Carrot from './assets/carrot.webp';
 
 function Home() {
   const message = "#ILOVEMINECRAFT"
