@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Home.css";
-import Carrot from './assets/carrot.webp';
 
 function Home() {
   const message = "#ILOVEMINECRAFT"
@@ -21,7 +20,6 @@ function Home() {
       <p>
         Welcome to the SSD Minecraft Fan Page!
       </p>
-      <img src={Carrot} />
 
       <div className='card'>
         <p>
