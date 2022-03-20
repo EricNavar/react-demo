@@ -51,6 +51,7 @@ function PurchasePage() {
           
           if (!(filterSold && item.sold) && (searchText === "" || item.name.toLowerCase().includes(searchText.toLowerCase())))
             return <StoreItem {...item}/>
+          else return <></>
         })}
       </ItemContainer>
 

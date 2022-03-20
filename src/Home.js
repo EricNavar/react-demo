@@ -21,7 +21,6 @@ function Home() {
       <p>
         Welcome to the SSD Minecraft Fan Page!
       </p>
-      <img src={Carrot} />
 
       <div className='card'>
         <p>
