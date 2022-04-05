@@ -31,7 +31,7 @@ describe('Minecraft marketplace', () => {
     //find the search field element and type "carrot" into it and type the Enter key
     cy.get('#search-field').type(`${newItem}{enter}`)
 
-    //find the item bu its class name. Ensure there is only one and verify its name.
+    //find the item by its class name. Ensure there is only one and verify its name.
     cy.get('#item-container div')
       .should('have.length', 1)
       .last()
@@ -49,11 +49,12 @@ describe('Minecraft marketplace', () => {
       // a context where we check the box at the start of each test.
       cy.get('input[type=checkbox]')
         .check()
+        .check()
     })
 
     it('can filter for sold items', () => {
       cy.get('#item-container div')
-        .should('have.length', 2)
+        .should('have.length', 3)
         .first()
         .should('contain.text', 'carrot')
 
