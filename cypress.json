@@ -1,1 +1,5 @@
-{}
+{
+    "testFiles": "**/*.{feature,spec.js}",
+    "integrationFolder": ".",
+    "ignoreTestFiles": "**/node_modules/**/*{feature,spec.js}"
+}
