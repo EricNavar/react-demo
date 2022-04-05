@@ -16,8 +16,6 @@ describe('Minecraft marketplace', () => {
     cy.visit('localhost:3000/purchase')
   })
 
-  cy.checkA11y()
-
   it('displays three items by default', () => {
     //Assert that there are 3 items in the store
     cy.get('#item-container div').should('have.length', 3)
@@ -38,6 +36,10 @@ describe('Minecraft marketplace', () => {
       .should('have.length', 1)
       .last()
       .should('contain.text', newItem)
+  })
+
+  it('passes a11y standards', () => {
+    cy.checkA11y()
   })
 
   context('filtering out sold', () => {
