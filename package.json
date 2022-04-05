@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^9.5.2"
+    "cypress": "^9.5.2",
+    "cypress-axe": "^0.14.0"
   }
 }

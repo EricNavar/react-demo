@@ -39,6 +39,7 @@ describe('Minecraft marketplace', () => {
   })
 
   it('passes a11y standards', () => {
+    cy.injectAxe();
     cy.checkA11y()
   })
 
